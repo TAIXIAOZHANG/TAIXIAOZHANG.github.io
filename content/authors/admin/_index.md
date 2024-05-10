@@ -1,9 +1,9 @@
 ---
 # Display name
-title: 张霄
+title: Xiao Zhang
 
 # Name pronunciation (optional)
-name_pronunciation: [j AH ng]   [sh ih ow]
+name_pronunciation: j AH ng   sh ih ow
 
 # Full name (for SEO)
 first_name: Xiao
