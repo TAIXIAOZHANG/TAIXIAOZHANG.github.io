@@ -3,11 +3,11 @@
 title: 吳健雄
 
 # Name pronunciation (optional)
-name_pronunciation: Xiao Zhang
+name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Xiao
-last_name: Zhang
+first_name: Shiung Wu
+last_name: Chien
 
 # Status emoji
 status:
@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Computer Science
+role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations to show in About widget
 organizations:
