@@ -1,77 +1,81 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0025)https://www.zhangxiao.me/ -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="google-site-verification" content="pBGmsXP-78laV6GREHERgXT-HGYDqjWvqrWZN6b6dKs">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="google-site-verification" content="pBGmsXP-78laV6GREHERgXT-HGYDqjWvqrWZN6b6dKs" />
   <title>Xiao Zhang's Homepage</title>
 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="description" content="Xiao Zhang now works a Postdoctoral Associate at Duke University &amp; NSF Athena (NSF NAI for Edge Computing Leveraging Next Generation Networks). He got his Ph.D. degree of Computer Science at Michigan State University in Augest 2023.">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Xiao Zhang now works a Postdoctoral Associate at Duke University & NSF Athena (NSF NAI for Edge Computing Leveraging Next Generation Networks). He got his Ph.D. degree of Computer Science at Michigan State University in Augest 2023.">
   <meta name="keywords" content="Xiao Zhang, 张霄, xiaozhang, Xiao, Zhang, Optical Wireless Communication, MSU, Michigan State, Computer">
-  <meta name="author" content="Xiao Zhang">
+  <meta name="author" content="Xiao Zhang" >
 
-  <link rel="stylesheet" href="./Xiao Zhang&#39;s Homepage_files/w3.css">
+  <link rel="stylesheet" href="w3.css">
 
   <style>
   .w3-sidebar a {font-family: "Roboto", sans-serif}
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-  
-  /* 新增的News部分样式 */
-  .news-container {
-    height: 150px; /* 固定高度，显示一条新闻 */
-    overflow: hidden;
-    position: relative;
-    margin-top: 15px;
-  }
-
-  .news-slider {
-    position: absolute;
-    width: 100%;
-    animation: slide 15s infinite;
-  }
-
-  .news-item {
-    height: 30px;
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-  }
-
-  @keyframes slide {
-    0%, 15% { transform: translateY(0); }
-    20%, 35% { transform: translateY(-30px); }
-    40%, 55% { transform: translateY(-60px); }
-    60%, 75% { transform: translateY(-90px); }
-    80%, 95% { transform: translateY(-120px); }
-    100% { transform: translateY(0); }
-  }
   </style>
 
-  <link rel="icon" type="image/png" href="https://www.zhangxiao.me/images/icons.png">
+  <link rel="icon" type="image/png" href="images/icons.png">
+  <!--
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        // Store hash
+        var hash = this.hash;
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  //-->
+
 </head>
+
 
 <body class="w3-content" style="max-width:1000px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-blue w3-collapse w3-top w3-right" style="z-index:3;width:150px;" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b><a style="color: #FFCB05" welcome=""></a></b></h3>
+    <h3><b><a style="color: #FFCB05"Welcome></a></b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#home" class="w3-bar-item w3-button">Home</a>
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#news" class="w3-bar-item w3-button">News</a>
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#publications" class="w3-bar-item w3-button">Research</a>
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#teaching" class="w3-bar-item w3-button">Teaching</a>
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#students" class="w3-bar-item w3-button">Students</a>
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#award" class="w3-bar-item w3-button">Awards</a>
-    <a style="color: #FFCB05" href="https://www.zhangxiao.me/#service" class="w3-bar-item w3-button">Services</a>
+    <a style="color: #FFCB05" href="#home" class="w3-bar-item w3-button">Home</a>
+    <a style="color: #FFCB05" href="#news" class="w3-bar-item w3-button">News</a>
+    <!-- <a href="#projects" class="w3-bar-item w3-button">Projects</a> -->
+    <!-- <a href="#talks" class="w3-bar-item w3-button">Talks</a> -->
+    <a style="color: #FFCB05" href="#publications" class="w3-bar-item w3-button">Research</a>
+    <a style="color: #FFCB05" href="#teaching" class="w3-bar-item w3-button">Teaching</a>
+    <a style="color: #FFCB05" href="#students" class="w3-bar-item w3-button">Students</a>
+    <a style="color: #FFCB05" href="#award" class="w3-bar-item w3-button">Awards</a>
+    <a style="color: #FFCB05" href="#service" class="w3-bar-item w3-button">Services</a>
+    
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-blue w3-xlarge">
   <div class="w3-bar-item w3-padding-24"><a style="color: #FFCB05"><strong>WELCOME</strong></a></div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -85,7 +89,7 @@
 
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 80%;max-width: 320px" alt="profile photo" src="./Xiao Zhang&#39;s Homepage_files/xiao_round_um_2.png">
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/xiao_round_um_2.png">
       <h1><a>Xiao Zhang</a></h1>
 
         <p class="w3-center">
@@ -99,184 +103,270 @@
 
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
           My current research interests are <strong><em>mobile computing</em>, <em>AIoT</em>, <em>Cyber Physical Systems</em>, <em>AI-assisted sensing/localization</em>, and <em>HCI</em></strong>. My previous work focused on exploring spatial-temporal diversities in Optical Wireless Communication (OWC) for its improved communication performance and enabled sensing/localization. My vision is that light can provide the secure and location-aware communication for Internet-of-Things and human-centered mobile computing. With explored OWC's spatial-temporal diversities and machine learning, we can use light as promising medium for next-generation wireless networks with broad applications (e.g., LiFi, V2X networks, underwater navigation, digital health, smart city, HCI, and AR/VR). 
+          <!-- In August 2023, I got my <strong>Ph.D.</strong> degree of <strong>Computer Science</strong> at <strong>Michigan State University</strong>, advised by Dr. <strong>Li Xiao</strong> in eLANS lab. My Ph.D. thesis is "<em>Exploring Spatial-Temporal Multi-Dimensions in Optical Wireless Communication and Sensing</em>". Before that, I obtained my master degree at computer school of <strong>Northwestern Polytechnical University</strong>, advised by Dr. <strong>Shining Li</strong> at Wireless Sensor Network lab. I obtained my bachelor degree of Internet-of-Things Engineering at <strong>Taiyuan University of Technology</strong>. -->
         </p>
+
+        <!-- <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          
+        </p> -->
 
         <p class="w3-center">
           <a href="mailto:zhanxiao@umich.edu">Umich Email</a> /
-          <a href="https://scholar.google.com/citations?user=TIFjEXIAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> /
+          <a href="https://scholar.google.com/citations?user=TIFjEXIAAAAJ&hl=en&oi=ao">Google Scholar</a> /
           <a href="https://experts.umich.edu/13121-xiao-zhang">Michigan Experts</a>
         </p>
+        </tbody></table>
   </div>
 
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News</h2>
-   <div class="news-container">
-     <div class="news-slider">
-       <div class="news-item"><strong>01/2025, invited to be a TPC member of IEEE INFOCOM DeepWireless 2025.</strong></div>
-       <div class="news-item"><strong>10/2024, invited to be a TPC member of IEEE ICNC 2025.</strong></div>
-       <div class="news-item"><strong>09/2024, joined UM-Dearborn as a tenure-track Assistant Professor.</strong></div>
-       <div class="news-item"><strong>07/2024, invited to be a TPC member of IEEE ICPADS 2024.</strong></div>
-       <div class="news-item"><strong>05/2024, invited to be a TPC member of IEEE MSN 2024.</strong></div>
-     </div>
-   </div>
+      <p><li> <strong> 01/2025, invited to be a TPC member of IEEE INFOCOM DeepWireless 2025.</strong>
+      <p><li> <strong> 10/2024, invited to be a TPC member of IEEE ICNC 2025.</strong>
+      <p><li> <strong> 09/2024, joined UM-Dearborn as a tenure-track Assistant Professor.</strong>
+      <p><li> <strong> 07/2024, invited to be a TPC member of IEEE ICPADS 2024.</strong>
+      <p><li> <strong> 05/2024, invited to be a TPC member of IEEE MSN 2024.</strong>
+      <p><li> <strong> 09/2023, joined Duke University as a Postdoctoral Associate.</strong> 
+      <p><li> <strong> 05/2023, successfully defended my Ph.D. thesis. </strong> 
+      <p><li> <strong> 09/2022, passed comprehensive exam.</strong>  
+      <p><li> <strong> 01/2020, passed qualification exam.</strong>  
+      <p><li> <strong> 01/2019, started PhD journey.</strong> 
+  </div> 
+   	  <!-- <p><li> 02/2022, Our suvery paper on vision transformer has been accepted by <a href="https://arxiv.org/pdf/2012.12556">IEEE TPAMI</a>.</li></p> -->
+      <!-- <p><li> 09/2021, 10 papers have been accepted by <a href="https://nips.cc/Conferences/2021">NeurIPS 2021</a>.</li></p>
+      <p><li> 09/2021, The journal version of versatile filters has been accepted by <a href="https://ieeexplore.ieee.org/iel7/34/4359286/09543586.pdf">IEEE TPAMI</a>.</li></p>
+      <p><li> 07/2021, 1 paper has been accepted by <a href="https://iccv2021.thecvf.com/home">ICCV 2021</a>.</li></p>
+
+
+
+The Projects Section
+  <div class="w3-container w3-padding-32" id="projects">
+    <h2>Recent Projects</h2>
+    <p class="w3-justify">
+        Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
+    </p>
+
+        <h4><li>Adder Neural Networks</li></h4>
+        <img style="width:96%;" src="images/AdderNet.jpg"> 
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
+        </p>
+        <p class="w3-justify">
+        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
+        </p> 
+
+        <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
+        <img style="width:96%;" src="images/GhostNet.png"> 
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://live.huawei.com/huaweiconnect/meeting/cn/5872.html">Huawei Connect (HC) 2020</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub">MindSpore Hub</a>
+        </p>
+        <p class="w3-justify">
+        The initial verison of GhostNet was accepted by CVPR 2020, which achieved SOTA performance on ImageNet: <span style="color:red">75.7%</span> top1 acc with only <span style="color:red">226M FLOPS</span>. In the current version, we release a series computer vision models (e.g. int8 quantization, detection, and larger networks) on <strong>MindsSpore 1.0</strong> and <strong>Mate 30 Pro (Kirin 990)</strong>.
+        </p> 
+
+        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
+        <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
+        </p>
+        <p class="w3-justify">
+        This project aims to develop a video style transfer system on the <strong>Huawei Atlas 200 DK AI developer Kit</strong>. The latency of the original model for processing one image is about <span style="color:red">630ms</span>. After accelerating it using our method, the lantency now is about <span style="color:red">40ms</span>. 
+        </p>  
+
   </div>
+  
+  <!-- The Talks Section -->
+  <!-- <div class="w3-container w3-light-grey w3-padding-32" id="talks">
+    <h2>Talks</h2>
+      <p><li> 10/2021, Vision Transformer at <a href="http://valser.org/2021/#/tutorial">VALSE 2021, Hangzhou, China</a>.</li></p>
+	  <p><li> 05/2021, Adder Neural Network at <a href="https://haet2021.github.io/speakers.html">HAET ICLR 2021 workshop</a>. Thanks <a href="https://datawisdom.ca/">Vahid</a> for the invitation.</li></p>
+      <p><li> 06/2020, "<a href="http://valser.org/webinar/slide/slides/20200603/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9-%E5%B7%A5%E4%B8%9A%E7%95%8C%E5%92%8C%E5%AD%A6%E6%9C%AF%E7%95%8C%E7%9A%84%E5%B7%AE%E5%BC%82.pdf">AI on the Edge - Discussion on the Gap Between Industry and Academia</a>" at <a  href="http://valser.org/"><strong>VALSE</strong></a> Webinar.</li></p>
+      <p><li> 05/2020, "<a href="https://www.bilibili.com/video/av925692420/">Edge AI: Progress and Future Directions</a>" at <a href="https://www.qbitai.com/"> <strong>QbitAI</strong></a> using <a  href="https://www.bilibili.com/"><strong>bilibili</strong></a>.</li></p>
+  </div> -->
+  
 
  <!-- The Publications Section -->
-  <div class="w3-container w3-padding-32" id="publications">
+  <div class="w3-container w3-padding-32"" id="publications">
     <h2>Research</h2>
 
     <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:800px">
-      I am interested in next-generation wireless communication and networking, particularly in the areas of optical wireless communication (OWC) and mmWave technologies. My interests also extend to underwater optical communication, localization, and navigation, as well as mobile computing. Additionally, I am intrigued by vehicle-to-everything (V2X) networks, AI-assisted novel applications, the Internet of Things (IoT), digital health, cyber-physical systems (CPS) security, and the Metaverse.
+      I am interested in next-generation wireless communication and networking, particularly in the areas of optical wireless communication (OWC) and mmWave technologies. My interests also extend to underwater optical communication, localization, and navigation, as well as mobile computing. Additionally, I am intrigued by vehicle-to-everything (V2X) networks, AI-assisted novel applications, the Internet of Things (IoT), digital health, cyber-physical systems (CPS) security, and the Metaverse.      </p>
     </p>
-    <p></p>
     
+        
     <h4> Conference Papers</h4>
+
     <ol>
+
       <p>
         <li><strong>HoloCube: 3D Opitcal IoT Connections via Software Defined Pepper's Ghost</strong>
         <br>
         <strong>Xiao Zhang</strong>, Li Xiao, and Matt W. Mutka        
         <br>
-        <em>ICNP</em> 2024 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/ICNP24_HoloCube.pdf">paper</a> 
-      </p>
+        <em>ICNP</em> 2024 | <a style="color: #447ec9" href="data/ICNP24_HoloCube.pdf">paper</a> 
+        </p>
 
       <p>
         <li><strong>WavePurifier: Purifying Audio Adversarial Examples via Hierarchical Diffusion Models</strong>
         <br>
         Hanqing Guo, Guangjing Wang, Bocheng Chen, Yuanda Wang, <strong>Xiao Zhang</strong>, Xun Chen, Qiben Yan, Li Xiao       
         <br>
-        <em>MobiCom</em> 2024 | <a style="color: #447ec9" href="https://www.zhangxiao.me/">paper</a> 
-      </p>
+        <em>MobiCom</em> 2024 | <a style="color: #447ec9" href="">paper</a> 
+        </p>
+
 
       <p>
         <li><strong>RadCloud: Real-Time High-Resolution Point Cloud Generation Using Low-Cost Radars for Aerial and Ground Vehicles</strong>
         <br>
         David Hunt, Shaocheng Luo, Amir Khazraei, <strong>Xiao Zhang</strong>, Spencer Hallyburton, Tingjun Chen, Miroslav Pajic        
         <br>
-        <em>ICRA</em> 2024 | <a style="color: #447ec9" href="https://www.zhangxiao.me/">paper</a> 
-      </p>
+        <em>ICRA</em> 2024 | <a style="color: #447ec9" href="">paper</a> 
+        </p>
 
       <p>
         <li><strong>RoFin: 3D Hand Pose Reconstructing via 2D Rolling Fingertips</strong>
         <br>
         <strong>Xiao Zhang</strong>, Griffin Klevering, Juexing Wang, Li Xiao, and Tianxing Li        
         <br>
-        <em>MobiSys</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/RoFin_MobiSys.pdf">paper</a> 
-      </p>
+        <em>MobiSys</em> 2023 | <a style="color: #447ec9" href="data/RoFin_MobiSys.pdf">paper</a> 
+        </p>
+
 
       <p>
         <li><strong>PATCH: A Plug-in Framework Of Non-blocking Inference For Distributed Multimodal System</strong>
         <br>
         Juexing Wang, Guangjing Wang, <strong>Xiao Zhang</strong>, Li Liu, Huacheng Zeng, Li Xiao, Zhichao Cao, Lin Gu, and Tianxing Li
         <br>
-        <em>Ubicomp</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/juexing-ubicomp23.pdf">paper</a> 
-      </p>
+        <em>Ubicomp</em> 2023 | <a style="color: #447ec9" href="data/juexing-ubicomp23.pdf">paper</a> 
+        </p>
+
+
 
       <p>
         <li><strong>Boosting Optical Camera Communication via 2D Rolling Blocks</strong>
         <br>
         <strong>Xiao Zhang</strong>, Griffin Klevering, James Mariani, Li Xiao, and Matt Mutka
         <br>
-        <em>IWQoS</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/RainbowRow_IWQoS.pdf">paper</a> 
-      </p>
+        <em>IWQoS</em> 2023 | <a style="color: #447ec9" href="data/RainbowRow_IWQoS.pdf">paper</a> 
+        </p>
 
-      <p>
-        <li><strong>PoseFly: On-site Pose Parsing of Swarming Drones via 4-in-1 Optical Camera Communication</strong>
-        <br>
-        <strong>Xiao Zhang</strong>, Griffin Klevering, and Li Xiao
-        <br>
-        <em>WoWMoM</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/PoseFly_WoWMoM.pdf">paper</a> 
-      </p>
+        <p>
+          <li><strong>PoseFly: On-site Pose Parsing of Swarming Drones via 4-in-1 Optical Camera Communication</strong>
+          <br>
+          <strong>Xiao Zhang</strong>, Griffin Klevering, and Li Xiao
+          <br>
+          <em>WoWMoM</em> 2023 | <a style="color: #447ec9" href="data/PoseFly_WoWMoM.pdf">paper</a> 
+          </p>
 
       <p>
         <li><strong>U-Star: An Underwater Navigation System based on Passive 3D Optical Identification Tags</strong>
         <br>
         <strong>Xiao Zhang</strong>, Hanqing Guo, James Mariani, and Li Xiao
         <br>
-        <em>MobiCom</em> 2022 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/U-Star.pdf">paper</a> 
+        <em>MobiCom</em> 2022 | <a style="color: #447ec9" href="data/U-Star.pdf">paper</a> 
+        <!-- <em>MobiCom</em> 2022 | <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3495243.3517019">paper</a>  -->
+        <!-- <em>MobiCom</em> 2022 | <a style="color: #447ec9" href="https://www.sigmobile.org/mobicom/2022/accepted.html">paper</a>  -->
       </p>
 
-      <p>
-        <li><strong>LiFOD: Lighting Extra Data via Fine-grained OWC Dimming</strong>
+      <!-- <p>
+        <li><strong>Handling Data Heterogeneity in Federated Learning via Knowledge Fusion</strong>
         <br>
-        <strong>Xiao Zhang</strong>, James Mariani, Li Xiao, and Matt Mutka
+        Xu Zhou, Xinyu Lei, Cong Yang, Yichun Shi, <strong>Xiao Zhang</strong>, and Jingwen Shi
         <br>
-        <em>SECON</em> 2022 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/LiFOD.pdf">paper</a> 
-      </p>
+        <em>arXiv preprint</em> 2022 | <a style="color: #447ec9" href="data/FL_fusion.pdf">paper</a> 
+        </p> -->
 
       <p>
-        <li><strong>Effective Subcarrier Pairing for Hybrid Delivery in Relay Networks</strong>
-        <br>
-        <strong>Xiao Zhang</strong>, Li Xiao
-        <br>
-        <em>MASS</em> 2020 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/ESP.pdf">paper</a> 
+      <li><strong>LiFOD: Lighting Extra Data via Fine-grained OWC Dimming</strong>
+      <br>
+      <strong>Xiao Zhang</strong>, James Mariani, Li Xiao, and Matt Mutka
+      <br>
+      <em>SECON</em> 2022 | <a style="color: #447ec9" href="data/LiFOD.pdf">paper</a> 
+      </p>
+
+
+      <p>
+      <li><strong>Effective Subcarrier Pairing for Hybrid Delivery in Relay Networks</strong>
+      <br>
+      <strong>Xiao Zhang</strong>, Li Xiao
+      <br>
+      <em>MASS</em> 2020 | <a style="color: #447ec9" href="data/ESP.pdf">paper</a> 
       </p>
     
+
       <p>
-        <li><strong>k-Labelsets for Multimedia Classification with Global and Local Label Correlation</strong>
-        <br>
-        Yan Yan, Shining Li, <strong>Xiao Zhang</strong>, et.al
-        <br>
-        <em>MMM</em> 2018 | <a style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-319-73600-6_16">paper</a>    
+      <li><strong>k-Labelsets for Multimedia Classification with Global and Local Label Correlation</strong>
+      <br>
+      Yan Yan, Shining Li, <strong>Xiao Zhang</strong>, et.al
+      <br>
+      <em>MMM</em> 2018 | <a style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-319-73600-6_16">paper</a>    
       </p>
   
-      <p>
-        <li><strong>Directional Monitoring of Multiple Moving Targets by Multiple Unmanned Aerial Vehicles</strong>
-        <br>
-        Yan Pan, Shining Li, <strong>Xiao Zhang</strong>, et.al
-        <br>
-        <em>GLOBECOM</em> 2017 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/8253969">paper</a> 
-      </p>
   
       <p>
-        <li><strong>Multi-label Learning with Label-Specific Feature Selection</strong>
-        <br>
-        Yan Yan, Shining Li, Zhe Yang, <strong>Xiao Zhang</strong>, et.al
-        <br>
-        <em>ICONIP</em> 2017 | <a style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-319-70087-8_33">paper</a> 
+      <li><strong>Directional Monitoring of Multiple Moving Targets by Multiple Unmanned Aerial Vehicles</strong>
+      <br>
+      Yan Pan, Shining Li, <strong>Xiao Zhang</strong>, et.al
+      <br>
+      <em>GLOBECOM</em> 2017 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/8253969">paper</a> 
+      </p>
+  
+  
+      <p>
+      <li><strong>Multi-label Learning with Label-Specific Feature Selection</strong>
+      <br>
+      Yan Yan, Shining Li, Zhe Yang, <strong>Xiao Zhang</strong>, et.al
+      <br>
+      <em>ICONIP</em> 2017 | <a style="color: #447ec9" href="https://link.springer.com/chapter/10.1007/978-3-319-70087-8_33">paper</a> 
       </p>
     </ol>
 
     <h4> Journal Papers</h4>
     <ol>
       <p>
-        <li><strong>Exploiting Fine-grained Dimming with Improved LiFi Throughput</strong>
+        <li><strong>Exploiting Fine-grained Dimming with Improved LiFi Throughput
+        </strong>
         <br>
         <strong>Xiao Zhang</strong>, James Mariani, Li Xiao, and Matt W. Mutka
         <br>
-        <em>ACM Transactions on Sensor Networks</em> 2024 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/TOSN_LiFOD.pdf">paper</a> 
+        <em>ACM Transactions on Sensor Networks</em> 2024 | <a style="color: #447ec9" href="data/TOSN_LiFOD.pdf">paper</a> 
       </p>
 
       <p>
-        <li><strong>The Security in Optical Wireless Communication: A Survey</strong>
+        <li><strong>The Security in Optical Wireless Communication: A Survey
+        </strong>
         <br>
         <strong>Xiao Zhang</strong>, Griffin Klevering, Xinyu Lei, Yiwen Hu, Li Xiao, and Guan-Hua Tu
         <br>
-        <em>ACM Computing Surveys</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/OWC%20security.pdf">paper</a> 
+        <em>ACM Computing Surveys</em> 2023 | <a style="color: #447ec9" href="data/OWC security.pdf">paper</a> 
       </p>
 
       <p>
-        <li><strong>Handling Data Heterogeneity for IoT Devices in Federated Learning: A Knowledge Fusion Approach</strong>
+        <li><strong>Handling Data Heterogeneity for IoT Devices in Federated Learning: A Knowledge Fusion Approach
+        </strong>
         <br>
         Xu Zhou, Xinyu Lei, Cong Yang, Yichun Shi, <strong>Xiao Zhang</strong>, and Jingwen Shi
         <br>
-        <em>IEEE Internet of Things Journal</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/IoTJ2023.pdf">paper</a> 
+        <em>IEEE Internet of Things Journal</em> 2023 | <a style="color: #447ec9" href="data/IoTJ2023.pdf">paper</a> 
       </p>
 
       <p>
-        <li><strong>Survey for Soil Sensing with IOT and Traditional System</strong>
+        <li><strong>Survey for Soil Sensing with IOT and Traditional System
+        </strong>
         <br>
         Juexing Wang, <strong>Xiao Zhang</strong>, Li Xiao, and Tianxing Li
         <br>
-        <em>MDPI Network</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/network-03-00021.pdf">paper</a> 
+        <em>MDPI Network</em> 2023 | <a style="color: #447ec9" href="data/network-03-00021.pdf">paper</a> 
       </p>
     </ol>
 
+
     <h4> Workshop/Poster/Demo Papers</h4>
     <ol>
+
       <p>
-        <li><strong>Holographic Optical Tag enabled Omindirectional IoT Connection</strong>
+        <li><strong>Holographic Optical Tag enabled Omindirectional IoT Connection
+        </strong>
         <br>
         <strong>Xiao Zhang</strong>, Li Xiao, and Matt W. Mutka  
         <br>
@@ -284,108 +374,172 @@
       </p>
 
       <p>
-        <li><strong>Integrated On-site Localization and Optical Camera Communication for Drones</strong>
+        <li><strong>Integrated On-site Localization and Optical Camera Communication for Drones
+        </strong>
         <br>
         <strong>Xiao Zhang</strong>, Griffin Klevering, Kanishka Wijewardena, and Li Xiao
         <br>
-        <em>WoWMoM Demo</em> 2023 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/PoseFly_Demo.pdf">paper</a> 
+        <em>WoWMoM Demo</em> 2023 | <a style="color: #447ec9" href="data/PoseFly_Demo.pdf">paper</a> 
       </p>
 
       <p>
-        <li><strong>Exploring Rolling Shutter Effect for Motion Tracking with Objective Identification</strong>
+        <li><strong>Exploring Rolling Shutter Effect for Motion 
+          Tracking with Objective Identification
+        </strong>
         <br>
         <strong>Xiao Zhang</strong>, Griffin Klevering, Li Xiao
         <br>
-        <em>SenSys Poster</em> 2022 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/sensys22posterdemo-final26.pdf">paper</a> 
+        <em>SenSys Poster</em> 2022 | <a style="color: #447ec9" href="data/sensys22posterdemo-final26.pdf">paper</a> 
+      </p>
+
+
+      <p>
+      <li><strong>Lighting Extra Data via OWC Dimming</strong>
+      <br>
+      <strong>Xiao Zhang</strong>, Li Xiao
+      <br>
+      <em>CoNEXT Workshop</em> 2020 | <a style="color: #447ec9" href="data/LED.pdf">paper</a> 
       </p>
 
       <p>
-        <li><strong>Lighting Extra Data via OWC Dimming</strong>
-        <br>
-        <strong>Xiao Zhang</strong>, Li Xiao
-        <br>
-        <em>CoNEXT Workshop</em> 2020 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/LED.pdf">paper</a> 
+      <li><strong>RainbowRow: Fast Optical Camera Communication</strong>
+      <br>
+      <strong>Xiao Zhang</strong>, Li Xiao
+      <br>
+      <em>ICNP Workshop</em> 2020 | <a style="color: #447ec9" href="data/RBR.pdf">paper</a> 
       </p>
 
       <p>
-        <li><strong>RainbowRow: Fast Optical Camera Communication</strong>
-        <br>
-        <strong>Xiao Zhang</strong>, Li Xiao
-        <br>
-        <em>ICNP Workshop</em> 2020 | <a style="color: #447ec9" href="https://www.zhangxiao.me/data/RBR.pdf">paper</a> 
-      </p>
-
-      <p>
-        <li><strong>Effective Subcarrier Pairing Scheme in mmWave-based Relay System</strong>
-        <br>
-        <strong>Xiao Zhang</strong>, Li Xiao
-        <br>
-        <em>mmWaveRCN Poster</em> 2019 | <a style="color: #447ec9" href="https://mmwrcn.ece.wisc.edu/workshops/sixth-workshop-july-2019/fifth-workshop-agenda-2/third-workshop-posters-and-demos/">paper</a> 
+      <li><strong>Effective Subcarrier Pairing Scheme in mmWave-based Relay System</strong>
+      <br>
+      <strong>Xiao Zhang</strong>, Li Xiao
+      <br>
+      <em>mmWaveRCN Poster</em> 2019 | <a style="color: #447ec9" href="https://mmwrcn.ece.wisc.edu/workshops/sixth-workshop-july-2019/fifth-workshop-agenda-2/third-workshop-posters-and-demos/">paper</a> 
       </p>
     </ol>
+
+
+
+
+
   </div> 
+
+<!-- 
+      </ol>
+
+      <h4> Journal Papers:</h4>
+
+      <ol> -->
+
+      <!-- <p>
+      <li><strong>GhostNets on Heterogeneous Devices via Cheap Operations</strong>
+      <br>
+      Kai Han, <strong>Yunhe Wang</strong>, Chang Xu, Jianyuan Guo, Chunjing Xu, Enhua Wu, Qi Tian 
+      <br>
+      <em>IJCV</em> 2022 | <a style="color: #447ec9" href="https://link.springer.com/content/pdf/10.1007/s11263-022-01575-y.pdf">paper</a> | <a style="color: #447ec9" href="https://gitee.com/mindspore/models/tree/master/research/cv/ghostnet_d">MindSpore code</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Efficient-AI-Backbones">Pytorch code</a>
+      </p> -->
+
+
+      <!-- </ol>
+
+    </p>
+  </div> -->
 
     <!-- The Teaching Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="teaching">
     <h2>Teaching</h2>
-      <p>
-        <li>At UM-Dearborn
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        CIS 400 Programming Languages  
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        CIS 437/537 Advanced Networking    
-      </p>
+      <!-- <p><li> Reviewer of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p> -->
+      <!-- <p><li> Leturer <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>MSN 2024</em> -->
+        <p>
+          <li>At UM-Dearborn
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          CIS 400 Programming Languages  
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          CIS 437/537 Advanced Networking    
+          </p>
 
-      <p>
-        <li>At MSU
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        CSE 331 Algorithms and Data Structures
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        CSE 260 Discrete Structures
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        CSE 232 Introduction to Programming II
-      </p>
+          <p>
+            <li>At MSU
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            CSE 331 Algorithms and Data Structures
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            CSE 260 Discrete Structures
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            CSE 232 Introduction to Programming II
+            </p>
+
+      <!-- <p><li> At UM-Dearborn <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>CIS 400 Programming Languages</em>
+      <p><li> At MSU <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>CSE 331 Algorithms and Data Structures, CSE 260 Discrete Structures, CSE 232 Introduction to Programming II </em> -->
+
+
   </div>
 
     <!-- The Students Section -->
     <div class="w3-container w3-padding-32" id="students">
       <h2>Students</h2>
-        <p>
-          <li><strong>Ph.D.</strong>
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Deniz Acikbas
-        </p>
-      
-        <p>
-          <li><strong>master</strong>
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Ashwin Sarvadey
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Jaskirat Sudan 
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Rohit Raval 
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Nishaant Madhankumar
-        </p>
+        <!-- <p><li> Reviewer of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p> -->
+          <p>
+            <li><strong>Ph.D.</strong>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Deniz Acikbas
+            <!-- <br> -->
+           
+            </p>
+          
+          <p>
+            <li><strong>master</strong>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Ashwin Sarvadey
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Jaskirat Sudan 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Rohit Raval 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Nishaant Madhankumar
+            </p>
 
-        <p>
-          <li><strong>undergraduate</strong>
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Christian Nwobu （NSF STEM Scholar）
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Fatima Qasem （NSF STEM Scholar）
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Fatima Mohammed （NSF STEM Scholar）
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Syed Gilani （UM SURE Scholar）
-        </p>
+          <p>
+            <li><strong>undergraduate</strong>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Christian Nwobu （NSF STEM Scholar）
 
-        <p>
-          <li><strong>intern</strong>
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Hasky Fynn
-        </p>
+            <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Alan Raj
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Zaynab Mourtada -->
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Fatima Qasem （NSF STEM Scholar）
+            <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Areeba Mirza
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Jason Grose -->
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Fatima Mohammed （NSF STEM Scholar）
+            <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Soham Naik  -->
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Syed Gilani （UM SURE Scholar）
+            </p>
+
+
+          <p>
+            <li><strong>intern</strong>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Hasky Fynn
+            <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Xinmei Fu -->
+            </p>
+
+            
+          <!-- <p>
+            <li><strong>high school</strong>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Max Xiao
+            </p> -->
+
     </div>
+  
+
 
   <!-- The Awards Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="award">
@@ -400,19 +554,51 @@
     <p><li> 2013/2014, National Encouragement Scholarship, China</p>
   </div>  
 
+
   <!-- The Services Section -->
   <div class="w3-container w3-padding-32" id="service">
     <h2>Services</h2>
-      <p><li> <strong>Program Committee</strong>  
-        <p class="w3-justify" style="width:90%;border:5px;border-spacing:5px;border-collapse:separate;margin-right:1em;margin-left:1em;max-width:600px">
-          <em>INFOCOM DeepWireless 2025, ICNC 2025, MSN 2024, ICPADS 2024 </em>
-        </p>
+      <!-- <p><li> Reviewer of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p> -->
+        <p><li> <strong>Program Committee</strong>  
+          <p class="w3-justify" style="width:90%;border:5px;border-spacing:5px;border-collapse:separate;margin-right:1em;margin-left:1em;max-width:600px">
+            <em>INFOCOM DeepWireless 2025, ICNC 2025, MSN 2024, ICPADS 2024 </em>        </p>
   
       <p><li> <strong>External Reviewer</strong>  
         <p class="w3-justify" style="width:90%;border:5px;border-spacing:5px;border-collapse:separate;margin-right:1em;margin-left:1em;max-width:600px">
-          <em>ICSC 2025, INFOCOM 2020-2024, MobiCom 2024, MEDES 2024, ICC 2023, CVPR 2023, MASS 2019, GLOBECOM 2019, IEEE Transactions on Human-Machine Systems (THMS), IEEE Transactions on Mobile Computing (TMC), IEEE Journal on Selected Areas in Communications (JSAC), IEEE Transactions on Dependable and Secure Computing (TDSC), ACM Transactions on Cyber-Physical Systems, IEEE Communication Letters </em>
-        </p>
+          <em>ICSC 2025, INFOCOM 2020-2024, MobiCom 2024, MEDES 2024, ICC 2023, CVPR 2023, MASS 2019, GLOBECOM 2019, IEEE Transactions on Human-Machine Systems (THMS), IEEE Transactions on Mobile Computing (TMC), IEEE Journal on Selected Areas in Communications (JSAC), IEEE Transactions on Dependable and Secure Computing (TDSC), ACM Transactions on Cyber-Physical Systems, IEEE Communication Letters </em>        </p>
   </div>
+
+<!-- 
+  <div class="w3-light-grey w3-center w3-padding-24">
+
+    Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a></br> -->
+
+  <!-- Default Statcounter code for Xiao Zhang's Homepage
+  https://xiaozhangmsu.github.io/ -->
+  <!-- No.
+  <script type="text/javascript">
+  var sc_project=12347113; 
+  var sc_invisible=0; 
+  var sc_security="21aca5d1"; 
+  var sc_https=1; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script> Visitor Since Feb 2022.  -->
+  <!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> -->
+  <!-- <noscript>
+    <div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div>
+  </noscript> -->
+  <!-- End of Statcounter Code -->
+
+  <!-- </div> -->
+
+  <!-- End page content -->
+</div>
 
 <script>
 // Accordion 
@@ -428,6 +614,7 @@ function myAccFunc() {
 // Click on the "Jeans" link on page load to open the accordion for demo purposes
 document.getElementById("myBtn").click();
 
+
 // Open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -438,45 +625,7 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
-
-// 新闻滑动效果调整
-document.addEventListener('DOMContentLoaded', function() {
-  const newsItems = document.querySelectorAll('.news-item');
-  if (newsItems.length > 5) {
-    for (let i = 5; i < newsItems.length; i++) {
-      newsItems[i].style.display = 'none';
-    }
-  }
-  
-  // 调整动画时间基于新闻数量
-  const newsCount = Math.min(5, document.querySelectorAll('.news-item').length);
-  if (newsCount > 1) {
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes slide {
-        ${generateKeyframes(newsCount)}
-      }
-    `;
-    document.head.appendChild(style);
-  }
-});
-
-function generateKeyframes(count) {
-  let keyframes = '';
-  const segment = 100 / (count * 2); // 每个新闻显示和过渡时间
-  
-  for (let i = 0; i < count; i++) {
-    const start = i * segment * 2;
-    const mid = start + segment;
-    const end = mid + segment;
-    keyframes += `${start}%, ${mid}% { transform: translateY(-${i * 30}px); }`;
-    if (i === count - 1) {
-      keyframes += `${end}% { transform: translateY(0); }`;
-    }
-  }
-  
-  return keyframes;
-}
 </script>
 
-</body></html>
+</body>
+</html>
