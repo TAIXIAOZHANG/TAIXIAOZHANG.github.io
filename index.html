@@ -98,7 +98,7 @@
         </p>
 
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am an Assistant Professor in the Department of <a style="color: #447ec9" href="https://umdearborn.edu/cecs/departments/computer-and-information-science">Computer and Information Science</a> at the <a style="color: #447ec9" href="https://umdearborn.edu/">University of Michigan-Dearborn</a>, where I lead the Trustworthy AI-driven IoT Lab (<strong>TAI Lab</strong>). Before joining UM-Dearborn, I was a Postdoctoral Associate at <a style="color: #447ec9" href="https://duke.edu/">Duke University</a>. I obtained my Ph.D. degree in the Computer Science and Engineering at <a style="color: #447ec9" href="https://msu.edu/">Michigan State University</a>, my M.S. degree at Northwestern Polytechnical University and B.E. degree with honor at Taiyuan University of Technology. <strong>I am looking for highly self-motivated students (<a style="color: #ff0000" href="https://umdearborn.edu/cecs/departments/computer-and-information-science/graduate-programs/phd-computer-and-information-science">Ph.D.</a>, master, undergraduate, visiting, intern, and high school) to join my group</strong>. If you are passionate about related research topics, please email me with your CV, transcripts, and several sentences about your research interests.  
+          I am an Assistant Professor in the Department of <a style="color: #447ec9" href="https://umdearborn.edu/cecs/departments/computer-and-information-science">Computer and Information Science</a> at the <a style="color: #447ec9" href="https://umdearborn.edu/">University of Michigan-Dearborn</a>, where I lead the Trustworthy AI-driven IoT Lab (<strong>TAI Lab</strong>). Before joining UM-Dearborn, I was a Postdoctoral Associate at <a style="color: #447ec9" href="https://duke.edu/">Duke University</a>. I obtained my Ph.D. degree in the Computer Science and Engineering at <a style="color: #447ec9" href="https://msu.edu/">Michigan State University</a>, my M.S. degree at Northwestern Polytechnical University and B.E. degree with honor at Taiyuan University of Technology. <strong>I am looking for highly self-motivated students (<a style="color: #447ec9" href="https://umdearborn.edu/cecs/departments/computer-and-information-science/graduate-programs/phd-computer-and-information-science">Ph.D.</a>, master, undergraduate, visiting, intern, and high school) to join my group</strong>. If you are passionate about related research topics, please email me with your CV, transcripts, and several sentences about your research interests.  
         </p>
 
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
@@ -574,26 +574,63 @@ The Projects Section
   
 
 
+
   <!-- The Awards Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="award">
     <h2>Awards</h2>
-    <p><li> 2025, IHP Research and Engagement Grant, UM</p>
-    <p><li> 2025, OE Review Grant, UM-Dearborn</p>
-    <p><li> 2025, OE Creation Grant, UM-Dearborn</p>
-    <p><li> 2025, Creative Teaching Fund, UM-Dearborn</p>
-    <p><li> 2025, SURE Program, UM-Dearborn</p>
-    <p><li> 2025, NeTS ECI Travel Grant, NSF</p>
-    <p><li> 2024, Regional I-Corps Fund, NSF</p>
-    <p><li> 2024, RAG Grant, UM-Dearborn</p>
-    <p><li> 2023/2021/2019, Graduate Office Fellowship, MSU</p>
-    <p><li> 2023, Dissertation Completion Fellowship, MSU</p>
+
+   <ul id="awards-list">
+      <!-- <li><strong></strong></li> -->
+      <p><li> 2025, IHP Research and Engagement Grant, UM</p>
+      <p><li> 2025, OE Review Grant, UM-Dearborn</p>
+      <p><li> 2025, OE Creation Grant, UM-Dearborn</p>
+      <p><li> 2025, Creative Teaching Fund, UM-Dearborn</p>
+      <p><li> 2025, SURE Program, UM-Dearborn</p>
+      <p><li> 2025, NeTS ECI Travel Grant, NSF</p>
+      <p><li> 2024, Regional I-Corps Fund, NSF</p>
+      <p><li> 2024, RAG Grant, UM-Dearborn</p>
+      <p><li> 2023/2021/2019, Graduate Office Fellowship, MSU</p>
+      <!-- <li class="more-news" style="display:none;"><strong>09/2024, joined UM-Dearborn as a tenure-track Assistant Professor.</strong></li> -->
+      <li class="more-awards" style="display:none;"><strong>2023, Dissertation Completion Fellowship, MSU</strong></li>
+      <li class="more-awards" style="display:none;"><strong>2022, Graduate Travel Fellowship, MSU</strong></li>
+      <li class="more-awards" style="display:none;"><strong>2019, mmWave-RCN Student Travel Grant, NSF</strong></li>
+      <li class="more-awards" style="display:none;"><strong>2016-2018, Postgraduate Scholarship, NPU</strong></li>
+      <li class="more-awards" style="display:none;"><strong>2016, Outstanding Graduate, TUT</strong></li>
+      <li class="more-awards" style="display:none;"><strong>2015, President Scholarship, Top 10, TUT</strong></li>
+      <li class="more-awards" style="display:none;"><strong>2013/2014, National Encouragement Scholarship, China</strong></li>
+      
+   </ul>
+      <button id="toggle-btn" class="w3-button w3-margin-top" style="background: transparent; border: none; color: #447ec9; cursor: pointer;">
+        More
+      </button>
+  </div> 
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("toggle-btn");
+    let expanded = false;
+    btn.addEventListener("click", function () {
+      const moreItems = document.querySelectorAll(".more-awards");
+      moreItems.forEach(item => {
+        item.style.display = expanded ? "none" : "list-item";
+      });
+      btn.textContent = expanded ? "More" : "Less";
+      expanded = !expanded;
+    });
+  });
+</script>
+
+
+    
+    
+    <!-- <p><li> 2023, Dissertation Completion Fellowship, MSU</p>
     <p><li> 2022, Graduate Travel Fellowship, MSU</p>
     <p><li> 2019, mmWave-RCN Student Travel Grant, NSF</p>
     <p><li> 2016-2018, Postgraduate Scholarship, NPU</p>
     <p><li> 2016, Outstanding Graduate, TUT</p>
     <p><li> 2015, President Scholarship, Top 10, TUT</p>
     <p><li> 2013/2014, National Encouragement Scholarship, China</p>
-  </div>  
+  </div>   -->
 
 
   <!-- The Services Section -->
